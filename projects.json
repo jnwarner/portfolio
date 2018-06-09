@@ -1,0 +1,109 @@
+{
+  "apps": [
+    {
+      "name": "Sentiment",
+      "description": "Web app which determines the sentiment of users that tweet using a given hashtag.",
+      "url": "http://sentiment.joshuawarner.me",
+      "technologies": [
+        "Node.js",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "PUG"
+      ],
+      "libraries": [
+        "Chart.js",
+        "Sentiment",
+        "Twitter"
+      ]
+    },
+    {
+      "name": "Attender",
+      "description": "Attendance taking application aimed towards college classes, integrating with Blackboard and Canvas. (WIP)",
+      "url": null,
+      "technologies": [
+        "React.js",
+        "Redux",
+        "Node.js",
+        "JavaScript",
+        "HTML5",
+        "CSS3"
+      ],
+      "libraries": [
+        "Chart.js",
+        "Microsoft Graph",
+        "Sentiment",
+        "Twitter"
+      ]
+    },
+    {
+      "name": "Croissant Croissant",
+      "description": "FBLA Web Design project site.",
+      "url": "http://c2.joshuawarner.me",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "JQuery"
+      ],
+      "libraries": [
+        "Bootstrap",
+        "Google Icons"
+      ]
+    },
+    {
+      "name": "Let's Heal STL",
+      "description": "Website made for poetry and art book published after the Fergusson tragedy.",
+      "url": "http://lhs.joshuawarner.me",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "JQuery"
+      ],
+      "libraries": [
+        "Bootstrap",
+        "Font Awesome"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "name": "Movie of the Day",
+      "description": "Discord bot created to suggest user-submitted movies.",
+      "url": null,
+      "technologies": [
+        "Node.js",
+        "MySQL"
+      ],
+      "libraries": [
+        "Request",
+        "Discord.js"
+      ]
+    },
+    {
+      "name": "Stills Bot",
+      "description": "Discord bot to collect stills posted from @OnePerfectShot on Twitter, relaying it to a channel.",
+      "url": null,
+      "technologies": [
+        "Node.js"
+      ],
+      "libraries": [
+        "Twitter",
+        "Discord.js"
+      ]
+    },
+    {
+      "name": "Music Bot",
+      "description": "Discord bot that plays user suggested songs and playlists in a voice channel.",
+      "url": null,
+      "technologies": [
+        "Node.js"
+      ],
+      "libraries": [
+        "Twitter",
+        "Discord.js"
+      ]
+    }
+  ]
+}

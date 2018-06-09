@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio page for Joshua Warner",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jnwarner/portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "jnwarner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnwarner/portfolio/issues"
+  },
+  "homepage": "https://github.com/jnwarner/portfolio#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "sentiment": "^5.0.0",
+    "twitter": "^1.7.1"
+  }
+}

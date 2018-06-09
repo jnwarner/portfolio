@@ -1,0 +1,146 @@
+body {
+  font-family: 'Poppins', Helvetica;
+  height: 100%;
+  margin: 0;
+  background-color: #eee;
+}
+
+.row {
+  height: 100%;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul {
+  width: 100%;
+  padding: 0;
+  margin: 15px 0 0;
+  display: table;
+  list-style: none;
+}
+
+.nav li {
+  width: 33.3%;
+  display: table-cell;
+}
+
+.nav li a, .nav li a:visited {
+  display: block;
+  font-size: 16pt;
+  color: #666;
+}
+
+.nav li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.header {
+  height: 80vh;
+  width: 100%;
+  color: #666;
+  font-family: 'IBM Plex Sans';
+}
+
+.header .container {
+  height: 100%;
+}
+
+.header h1 {
+  vertical-align: middle;
+  font-size: 36pt;
+}
+
+.header strong {
+  color: #333;
+}
+
+.about {
+  height: 80vh;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.title {
+  width: 100%;
+  color: #666;
+  position: absolute;
+  margin: 0 0 50px;
+  padding-left: 15px;
+}
+
+.section {
+  height: 800px;
+  width: 100%;
+  padding: 120px 0 120px;
+  color: #eee;
+  background-color: #888;
+}
+
+.section .container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.section img {
+  width: 256px;
+  height: 256px;
+  margin: 0 auto;
+}
+
+.dark {
+  background-color: #666;
+  color: #eee;
+}
+
+.list {
+  display: inline-block;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+.list h4 {
+  text-decoration: underline;
+}
+
+.scroll {
+  width: 100%;
+  font-size: 14pt;
+  color: #666;
+  margin: 0;
+  margin-top: -70px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.button, .button:visited {
+  border-radius: 5px;
+  color: #666;
+  padding: 10px 15px;
+}
+
+.button:hover {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  bottom: 0;
+  color: #eee;
+  background-color: #333;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 990px) and (min-width: 500px) {
+  .content {
+    margin: 0 25%;
+  }
+}

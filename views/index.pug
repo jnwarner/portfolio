@@ -1,0 +1,145 @@
+extends layout
+
+block content
+  .nav
+    ul.navigation
+      li
+        a(href='#about') About
+      li
+        a(href='#projects') Projects
+      li
+        a(href='#contact') Contact
+  .header
+    .container
+      .row.justify-content-center.align-items-center
+        .col-md-6
+          h1 Welcome. My name is 
+            strong Josh Warner
+            | , I am a designer and developer.
+    svg(id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#eee" stroke="#eee" preserveAspectRatio="none")
+      path(d="M 0 0 C 40 50 60 50 100 0 Z")
+  .about
+    h2 haha
+  - var i = 1
+  each project in apps
+    if (i % 2 === 1)
+      .section(class='dark')
+        if (i === 1)
+          .scroll
+            span
+              p
+                i(class='fas fa-angle-down')
+                |   Scroll Down  
+                i(class='fas fa-angle-down')
+        .container
+          .row.align-items-center
+            .col-md-4
+              img(src='https://uwaterloo.ca/campus-wellness/sites/ca.campus-wellness/files/uploads/images/biosamples-icon-2316232_960_720.png')
+            .col-md-6
+              .content
+                h2 #{project.name}
+                p #{project.description}
+                .list
+                  h4 Technologies
+                  ul
+                    each technology in project.technologies
+                      li #{technology}
+                .list
+                  h4 Libraries
+                  ul
+                    each library in project.libraries
+                      li #{library}
+                if (project.url !== null) 
+                  br
+                  a.button(href=project.url) See More
+                  i.fa.fas-external-link
+    else
+      .section(style='margin-top: -100px;')
+        .container
+          .row.align-items-center
+            .col-md-4
+              img(src='https://uwaterloo.ca/campus-wellness/sites/ca.campus-wellness/files/uploads/images/biosamples-icon-2316232_960_720.png')
+            .col-md-6
+              .content
+                h2 #{project.name}
+                p #{project.description}
+                .list
+                  h4 Technologies
+                  ul
+                    each technology in project.technologies
+                      li #{technology}
+                .list
+                  h4 Libraries
+                  ul
+                    each library in project.libraries
+                      li #{library}
+                if (project.url !== null) 
+                  br
+                  a.button(href=project.url) See More
+    - i++
+  each project in bots
+    if (i % 2 === 1)
+      .section(class='dark')
+        if (i === 1)
+          .scroll
+            span
+              p
+                i(class='fas fa-angle-down')
+                |   Scroll Down  
+                i(class='fas fa-angle-down')
+        .container
+          .row.align-items-center
+            .col-md-4
+              img(src='https://uwaterloo.ca/campus-wellness/sites/ca.campus-wellness/files/uploads/images/biosamples-icon-2316232_960_720.png')
+            .col-md-6
+              .content
+                h2 #{project.name}
+                p #{project.description}
+                .list
+                  h4 Technologies
+                  ul
+                    each technology in project.technologies
+                      li #{technology}
+                .list
+                  h4 Libraries
+                  ul
+                    each library in project.libraries
+                      li #{library}
+                if (project.url !== null) 
+                  br
+                  a.button(href=project.url) See More
+    else
+      .section
+        .container
+          .row.align-items-center
+            .col-md-4
+              img(src='https://uwaterloo.ca/campus-wellness/sites/ca.campus-wellness/files/uploads/images/biosamples-icon-2316232_960_720.png')
+            .col-md-6
+              .content
+                h2 #{project.name}
+                p #{project.description}
+                .list
+                  h4 Technologies
+                  ul
+                    each technology in project.technologies
+                      li #{technology}
+                .list
+                  h4 Libraries
+                  ul
+                    each library in project.libraries
+                      li #{library}
+                if (project.url !== null) 
+                  br
+                  a.button(href=project.url) See More
+    - i++
+block footer
+  svg(id="footerCurve" style="margin-bottom: -8px; background-color: #ddd;" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#333" stroke="#333" preserveAspectRatio="none")
+      path(d="M 0 100 C 40 50 60 50 100 100 Z")
+  .footer
+    h5 Made by 
+      a(href="http://joshuawarner.me") Joshua Warner
+  script.
+    console.log(#{total})
+    if (parseInt(#{total}) % 2 === 0) {
+      document.getElementById('footerCurve').style.backgroundColor = '#ddd'
+    }
